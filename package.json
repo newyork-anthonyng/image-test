@@ -1,0 +1,17 @@
+{
+  "name": "myCoolProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "backstopjs": "^3.0.36"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "reference": "backstop reference",
+    "backstop": "backstop test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

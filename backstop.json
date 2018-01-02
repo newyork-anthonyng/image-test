@@ -1,0 +1,48 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
+    }
+  ],
+  "onBeforeScript": "chromy/onBefore.js",
+  "onReadyScript": "chromy/onReady.js",
+  "scenarios": [
+    {
+      "label": "My Local Test",
+      "url": "http://localhost:8000/trips/71454747595?email=kathleenshen4test@gmail.com",
+      "hideSelectors": [],
+      "removeSelectors": [
+      ],
+      "selectors": [
+        "document",
+        "header"
+      ],
+      "readyEvent": null,
+      "delay": 0,
+      "onReadyScript": null,
+      "onBeforeScript": null
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "chrome",
+  "engineFlags": [],
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
